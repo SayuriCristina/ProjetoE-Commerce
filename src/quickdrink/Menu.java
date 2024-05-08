@@ -22,11 +22,10 @@ public class Menu {
 		
 		while (true) {
 			
-			//System.out.println(Cores.TEXT_PURPLE);
 			System.out.println("╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄ · · ✫ · · ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮");
 			System.out.println(Cores.TEXT_PURPLE_BOLD + "                 ❝ QuickDrink ❞" + Cores.TEXT_RESET);
 			System.out.println("╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄ · · ✫ · · ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯");
-			//System.out.println(Cores.TEXT_RESET);
+			
 			System.out.println();
 			System.out.println("          1 ➤ Cardápio");
 			System.out.println("          2 ➤ Comprar");
@@ -133,7 +132,8 @@ public class Menu {
 					pedidos.fazerPedido(new Cafe(pedidos.gerarId(), nome, tamanho, preco, decaf, acucar, leite));
 				}
 				
-				} // fecha o switch de compra
+				
+				}
 				
 				pressEnter();
 				break;
@@ -160,11 +160,11 @@ public class Menu {
 				pressEnter();
 				break;
 			
-			} // fecha o switch
+			}
 			
-		} // fecha o while
+		}
 		
-	} // fecha o main
+	}
 	
 
 	public static void pressEnter() {
@@ -186,9 +186,9 @@ public class Menu {
 	
 	public static void tabela() {
 		System.out.println(Cores.TEXT_PURPLE_BOLD);
-		System.out.println("Suco:  20 reais - 500 Ml");
-		System.out.println("Milkshake: 25 reais - 500 Ml");
-		System.out.println("Café: 20 reais - 500 Ml" + Cores.TEXT_RESET);
+		System.out.println("Suco ➤  20 reais - 500 Ml");
+		System.out.println("Milkshake ➤ 25 reais - 500 Ml");
+		System.out.println("Café ➤ 20 reais - 500 Ml" + Cores.TEXT_RESET);
 	}
 	
-} // fecha a classe
+}
