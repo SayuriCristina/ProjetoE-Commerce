@@ -1,10 +1,8 @@
 package quickdrink.model;
 
-public class Bebida {
+public abstract class Bebida {
 	
-	private int id;
-	private int nome;
-	private int tamanho;
+	private int id, nome, tamanho;
 	private float preco;
 	
 	public Bebida(int id, int nome, int tamanho, float preco) {
@@ -46,6 +44,15 @@ public class Bebida {
 		this.preco = preco;
 	}
 	
+	public void visualizar() {
+		
+		System.out.println("Nº do pedido: " + this.id);
+		System.out.println("Tamanho: " + this.tamanho);
+		System.out.println("Preco: " + this.preco);
+	}
+	
+	
+		
 	
 
 }
